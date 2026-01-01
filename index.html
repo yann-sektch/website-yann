@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website YANN</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .bg-text {
+            position: absolute;
+            font-size: 150px;
+            font-weight: bold;
+            opacity: 0.1;
+            user-select: none;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: #ff0000;
+            color: white;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        button:hover {
+            background: #cc0000;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-text">YANN</div>
+
+    <button onclick="showName()">Klik Saya</button>
+
+    <div class="result" id="result">WEB YANN STORE</div>
+
+    <script>
+        function showName() {
+            document.getElementById("result").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
